@@ -1,0 +1,104 @@
+.intro {
+  margin-top: 250px;
+  padding: 40px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+  align-items: center;
+  background-color: #dddddd;
+
+  &__btn {
+    @include button;
+  }
+
+  &__imageswrapper {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+
+  &__img,
+  &__largeimg {
+    max-width: 200px;
+    max-height: 200px;
+    border: 1px solid #222;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+
+    &:hover {
+      transform: scale(1.1);
+      transition: all 250ms ease;
+    }
+  }
+
+  &__info {
+    display: flex;
+    max-width: 335px;
+    flex-direction: column;
+    gap: 5%;
+    border: 1px solid grey;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgb(200, 218, 240);
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  }
+
+  &__subtitle {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+    @media only screen and (max-width: 425px) {
+      font-size: 18px;
+    }
+  }
+
+  &__textcontent {
+    max-width: 300px;
+    text-align: justify;
+    font-size: 14px;
+    margin-bottom: 10px;
+
+    @media only screen and (max-width: 425px) {
+      max-width: 200px;
+      text-align: left;
+    }
+  }
+
+  &__title {
+    font-size: 36px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+
+    @media only screen and (max-width: 425px) {
+      font-size: 24px;
+    }
+  }
+
+  @media only screen and (min-width: 1000px) {
+    margin-top: 248px;
+    padding: 20px 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5%;
+
+    &__imageswrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+
+  @media only screen and (max-width: 425px) {
+    &__info {
+      text-align: center;
+    }
+
+    &__largeimg {
+      width: 250px;
+      height: 350px;
+    }
+  }
+}
