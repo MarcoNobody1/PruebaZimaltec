@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zimaltec News</title>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Raleway:wght@300;400;700;800&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <section class="header__prev">
+            <select class="header__select" title="lang" name="languageselector" id="langselect">
+                <option value="es">Español</option>
+                <option value="en">English</option>
+                <option value="pt">Português</option>
+            </select>
+            <div class="header__wrapper">
+                <a href="tel:+999999999" class="header__contact">999 99 99 99</a>
+                <a class="header__favorites" href="favorites.html">Favorites</a>
+            </div>
+        </section>
+        <section class="header__content">
+            <img id="menuBurguer" class="header__menuiconburguer" src="./assets/icons/MenuBurgerIcon.svg"
+                alt="Menu Burger Icon">
+            <img id="menuCross" class="header__menuiconcross header__menuiconcross--closed"
+                src="./assets/icons/MenuCrossIcon.svg" alt="Menu Cross Icon">
+            <nav id="nav" class="header__nav header__nav--hidden">
+                <a href="#" class="header__navlink">Home</a>
+                <a href="#products" class="header__navlink">Products</a>
+                <a href="#blog" class="header__navlink">Blog</a>
+                <a href="#aboutus" class="header__navlink">About Us</a>
+            </nav>
+            <div class="header__logocontainer">
+                <img class="header__logo" alt="Logo" src="/assets/logo.jpg" />
+            </div>
+            <div class="header__utilities">
+                <input id="search" class="header__searchbar" placeholder="search" type="text" />
+                <div class="header__profilecontainer">
+                    <img class="header__profileicon" src="/assets/icons/profile.svg" alt="Profile-icon">
+                    <p class="header__profiletext">Hello, James</p>
+                </div>
+                <div class="header__cart">
+                    <img class="header__carticon" src="/assets/icons/cart.svg" alt="Profile-icon">
+                    <p id="cartCounter" class="header__carttext">No products</p>
+                </div>
+            </div>
+        </section>
+
+    </header>
+    <section class="intro searcher">
+        <div class="intro__imageswrapper">
+            <img class="intro__img" src="./assets/cover1.jpg" alt="Cover1">
+            <img class="intro__img" src="./assets/cover2.jpg" alt="Cover2">
+            <img class="intro__img" src="./assets/cover3.jpg" alt="Cover3">
+        </div>
+        <div class="intro__info">
+            <h1 class="intro__title">Zimaltec News</h1>
+            <h4 class="intro__subtitle">The new page!</h4>
+            <p class="intro__textcontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <button type="button" class="intro__btn"><a href="#lastnews">See our latest news</a></button>
+        </div>
+
+        <div class="intro__largeimg">
+        </div>
+    </section>
+    <main class="main searcher">
+        <section id="products" class="products__recommended-products">
+            <h1>RECOMMENDED PRODUCTS</h1>
+            <div class="news__latest-news-cards-grid">
+                <div class="products__recommended-products-card">
+                    <div class="products__recommended-products-card-img">
+                        <img src="./assets/product.jpg" alt="">
+                    </div>
+                    <h1 class="products__recommended-products-card-title">Product name</h1>
+                    <p class="products__recommended-products-card-ref">Ref: 99999</p>
+                    <p class="products__recommended-products-card-price">from 10€</p>
+                    <button class="products__recommended-products-card-button">Add to cart</button>
+                </div>
+
+                <div class="products__recommended-products-card">
+                    <div class="products__recommended-products-card-img">
+                        <img src="./assets/product.jpg" alt="">
+                    </div>
+                    <h1 class="products__recommended-products-card-title">Product name</h1>
+                    <p class="products__recommended-products-card-ref">Ref: 99999</p>
+                    <p class="products__recommended-products-card-price">from 10€</p>
+                    <button class="products__recommended-products-card-button">Add to cart</button>
+                </div>
+
+                <div class="products__recommended-products-card">
+                    <div class="products__recommended-products-card-img">
+                        <img src="./assets/product.jpg" alt="">
+                    </div>
+                    <h1 class="products__recommended-products-card-title">Product name</h1>
+                    <p class="products__recommended-products-card-ref">Ref: 99999</p>
+                    <p class="products__recommended-products-card-price">from 10€</p>
+                    <button class="products__recommended-products-card-button">Add to cart</button>
+                </div>
+
+                <div class="products__recommended-products-card">
+                    <div class="products__recommended-products-card-img">
+                        <img src="./assets/product.jpg" alt="">
+                    </div>
+                    <h1 class="products__recommended-products-card-title">Product name</h1>
+                    <p class="products__recommended-products-card-ref">Ref: 99999</p>
+                    <p class="products__recommended-products-card-price">from 10€</p>
+                    <button class="products__recommended-products-card-button">Add to cart</button>
+                </div>
+            </div>
+        </section>
+        <section id="blog" class="news__latest-news">
+            <h1>LATEST NEWS</h1>
+            <div class="news__latest-news-cards-grid">
+                <div class="news__latest-news-card">
+                    <div class="news__latest-news-card-img">
+                        <img src="./assets/product.jpg" alt="">
+                    </div>
+                    <div>
+                        <h1 class="news__latest-news-card-title">Breaking news!</h1>
+                        <p class="news__latest-news-card-description">Zimaltec is giving await free services!</p>
+                    </div>
+                    <button class="news__latest-news-card-button">Read all</button>
+                </div>
+                <div class="news__latest-news-card">
+                    <div class="news__latest-news-card-img">
+                        <img src="./assets/product.jpg" alt="">
+                    </div>
+                    <div>
+                        <h1 class="news__latest-news-card-title">Breaking news!</h1>
+                        <p class="news__latest-news-card-description">Zimaltec is giving await free services!</p>
+                    </div>
+                    <button class="news__latest-news-card-button">Read all</button>
+                </div>
+                <div class="news__latest-news-card">
+                    <div class="news__latest-news-card-img">
+                        <img src="./assets/product.jpg" alt="">
+                    </div>
+                    <div>
+                        <h1 class="news__latest-news-card-title">Breaking news!</h1>
+                        <p class="news__latest-news-card-description">Zimaltec is giving await free services!</p>
+                    </div>
+                    <button class="news__latest-news-card-button">Read all</button>
+                </div>
+                <div class="news__latest-news-card">
+                    <div class="news__latest-news-card-img">
+                        <img src="./assets/product.jpg" alt="">
+                    </div>
+                    <div>
+                        <h1 class="news__latest-news-card-title">Breaking news!</h1>
+                        <p class="news__latest-news-card-description">Zimaltec is giving await free services!</p>
+                    </div>
+                    <button class="news__latest-news-card-button">Read all</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="aboutus" class="footer searcher">
+        <div class="footer__submenuswrapper">
+            <div class="footer__submenu">
+                <h3>About our life</h3>
+                <span>Insert here more info about your life</span>
+            </div>
+            <div class="footer__submenu">
+                <h3>About our future</h3>
+                <span>Insert here more info about your future</span>
+            </div>
+            <div class="footer__submenu">
+                <h3>About our fate</h3>
+                <span>Insert here more info about your fate</span>
+            </div>
+        </div>
+        <div class="footer__subscribe">
+            <div class="footer__icons">
+                <img src="./assets/icons/facebook.svg" alt="facebook icon">
+                <img src="./assets/icons/twitter.svg" alt="facebook icon">
+                <img src="./assets/icons/instagram.svg" alt="facebook icon">
+            </div>
+            <form class="footer__form" id="subscriptionForm">
+                <input placeholder="Enter your e-mail!" type="email" name="sub-input" id="subscribeinput" required>
+                <div class="footer__checkbox">
+                    <input id="subscribeCheckbox" title="checker" type="checkbox" required>
+                    <span>I agree to the terms and conditions.</span>
+                </div>
+                <button type="submit" id="subscribe" class="footer__subscribe-btn">Subscribe</button>
+            </form>
+            <div class="footer__logo">
+                <div class="footer__logo-img"></div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</html>
