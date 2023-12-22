@@ -1,0 +1,118 @@
+.header {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.29);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+
+  &__cart,
+  &__contact,
+  &__favorites,
+  &__logocontainer,
+  &__menuiconburguer,
+  &__menuiconcross,
+  &__profilecontainer,
+  &__utilities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__carttext,
+    &__logo,
+    &__profiletext,
+    &__searchbar,
+    &__select {
+      width: max-content;
+    }
+  }
+
+  &__content {
+    justify-content: space-evenly;
+  }
+
+  &__nav {
+    position: absolute;
+    bottom: -230px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 30px;
+    font-size: 20px;
+    background-color: white;
+    border: 1px solid black;
+    &--hidden {
+      display: none;
+    }
+  }
+
+  &__prev {
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  &__searchbar {
+    border-radius: 15px;
+    height: 30px;
+    background-image: url("../assets/icons/search.svg");
+    background-repeat: no-repeat;
+    background-position: 5% 50%;
+    padding: 15px 15px 15px 35px;
+    max-width: 150px;
+
+    @media only screen and (min-width: 1000px) {
+      max-width: 250px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    gap: 15px;
+  }
+
+  &__menuiconburguer,
+  &__menuiconcross {
+    flex: 1;
+    width: 16px;
+    height: 16px;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &--closed {
+      display: none;
+    }
+  }
+
+  @media only screen and (min-width: 1000px) {
+    &__menuiconburguer {
+      display: none;
+    }
+
+    &__nav {
+      position: relative;
+      border-radius: 15px;
+      display: flex;
+      bottom: 0;
+      width: max-content;
+      flex-direction: row;
+      gap: 30px;
+      font-size: 20px;
+    }
+
+    &__utilities {
+      flex: 0.5;
+      flex-direction: row;
+      justify-content: center;
+      gap: 10%;
+    }
+  }
+}
