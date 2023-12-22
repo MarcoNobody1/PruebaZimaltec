@@ -1,2 +1,2 @@
 # PruebaZimaltec
-Prueba de código para empresa Zimaltec Soluciones
+Prueba de código para empresa Zimaltec Soluciones.
